@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="icon" type="image/png" href="images/myicon.png">
-    
+
     <link rel="stylesheet" href="../css/main.css">
-    
+
 </head>
 
 <body>
@@ -32,7 +33,8 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg" data-bs-theme="light">
         <div class="container-fluid">
-            <img src="../img/logo.png" alt="Logo - trophy" width="30" height="40" class="d-inline-block align-text-top me-2"> 
+            <img src="../img/logo.png" alt="Logo - trophy" width="30" height="40"
+                class="d-inline-block align-text-top me-2">
             <a class="navbar-brand" href="index.html">SportsNMore</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,10 +50,11 @@
                         <a class="nav-link" href="basketball.html"><i class="fa-solid fa-basketball"></i> Basketball</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="badminton.html"> <i class="fa-solid fa-table-tennis"></i> Badminton</a>
+                        <a class="nav-link" href="badminton.html"> <i class="fa-solid fa-table-tennis"></i>
+                            Badminton</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"> <i class="fa-solid fas fa-user"></i> About us</a>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> <i class="fa-solid fas fa-user"></i> About us</a>
                     </li>
                 </ul>
             </div>
@@ -71,8 +74,61 @@
         </div>
     </div>
 
-    <h1>Welcome to my homepage!</h1>
-    <p>This is a simple HTML page.</p>
+    <!-- Cards to display sports content -->
+
+
+    <h2 class="text-2xl font-semibold text-gray-900 text-center mt-5">Featured Games</h2>
+    <!-- Card 1 -->
+    <section class="sportscards">
+        <div class="score-card">
+            <div class="card-image-container">
+                <img src="../img/manUni.png" alt="Soccer Match">
+            </div>
+            <div class="card-content">
+                <p class="sport-category text-primary">Soccer</p>
+
+                <div class="match-details">
+                    <div class="team">
+                        <span class="team-name">Manchester United</span>
+                        <span class="score">2</span>
+                    </div>
+
+                    <div class="vs-divider">VS</div>
+
+                    <div class="team">
+                        <span class="team-name text-end">Liverpool</span>
+                        <span class="score">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <a href="https://youtu.be/G6go_js-qoU?si=IeoUc5CFRTT5a-_N" target="_blank" class="text-decoration-none">
+            <div class="score-card">
+                <div class="card-image-container">
+                    <img src="../img/basketball.png" alt="Basketball Match">
+                    <span class="badge-live">Click to watch</span>
+                </div>
+                <div class="card-content">
+                    <p class="sport-category text-warning">Basketball</p>
+                    <div class="match-details text-dark">
+                        <div class="team">
+                            <span class="team-name">Los Angeles Lakers</span>
+                            <span class="score">110</span>
+                        </div>
+
+                        <div class="vs-divider">VS</div>
+
+                        <div class="team">
+                            <span class="team-name text-end">Golden State Warriors</span>
+                            <span class="score">121</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
 
     <!-- FOOTER -->
     <footer class="py-4 my-4 border-top text-center">
