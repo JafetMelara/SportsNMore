@@ -4,8 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
-.custom-navbar {
+nav{
     background-color: #ffffff;
 }
 
@@ -15,14 +14,16 @@ body {
 }
 
 .nav-link.active {
-    background-color: #3d7be0;
+    background-color: #155dfc;
     border-radius: 6px;
     padding: 6px 12px;
+    color: white !important;
 }
 
 /* HERO */
 .hero-section {
-    background-color: #2f5db3;
+    background-color: #163aaf;
+    color: white;
     padding: 60px 20px;
 }
 
