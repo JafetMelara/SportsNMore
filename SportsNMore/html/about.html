@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 
 <body>
@@ -51,8 +52,61 @@
         </div>
     </nav>
 
-    <h1>Welcome to my about page!</h1>
-    <p>This is a simple HTML page.</p>
+   <main class="container my-5">
+    <h2 class="text-center mb-5 fw-bold">Meet the Team</h2>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm profile-card">
+                <img src="../img/jafetMelara.jpg" class="card-img-top profile-img" alt="Jafet Melara">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">Jafet Melara</h4>
+                    <p class="text-primary fw-semibold">Lead Developer</p>
+                    <p class="card-text text-muted">International student at Fanshawe College. I specialize in C++, Java, and Web Development.</p>
+                    <hr>
+                    <h6 class="fw-bold text-start">Key Projects:</h6>
+                    <ul class="text-start small">
+                        <li><strong>C++ Statistics Tool:</strong> Data analysis and processing.</li>
+                        <li><strong>Personal Portfolio:</strong> Responsive site using Bootstrap.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm profile-card">
+                <img src="../img/partner-photo.jpg" class="card-img-top profile-img" alt="Ayaan Nadeem">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">Ayaan Nadeem</h4>
+                    <p class="text-primary fw-semibold">Project Coordinator & UI Designer</p>
+                    <p class="card-text text-muted">Focused on creating intuitive user experiences and managing project documentation.</p>
+                    <hr>
+                    <h6 class="fw-bold text-start">Strengths & Goals:</h6>
+                    <ul class="text-start small">
+                        <li>UI/UX Research and Design.</li>
+                        <li>Technical Documentation.</li>
+                        <li>Passionate about learning Full-Stack development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5 pt-5 border-top">
+        <h3 class="text-center mb-4">User Manual</h3>
+        <p class="text-center text-muted mb-4">Learn how to navigate and use the features of SportsNMore.</p>
+        
+        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+            <iframe src="../docs/User manual.pdf" allow="autoplay"></iframe>
+        </div>
+        
+        <div class="text-center mt-3">
+            <a href="../docs/User manual.pdf" download class="btn btn-outline-primary">
+                <i class="bi bi-download"></i> Download Manual
+            </a>
+        </div>
+    </section>
+</main>
 
     <footer class="py-4 my-4 border-top text-center">
         <p class="text-secondary">© 2026 Jafet Melara. All Rights Reserved.</p>
