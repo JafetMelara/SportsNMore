@@ -132,19 +132,19 @@ nav{
 /* NEWS CARDS */
 .newscards {
 display: flex;
-    flex-direction: row; /* Asegura que vayan de lado a lado */
-    flex-wrap: wrap;     /* Permite que bajen a la siguiente fila si hay más de 2 */
+    flex-direction: row; 
+    flex-wrap: wrap;     
     justify-content: center;
-    gap: 20px;           /* Espacio entre tarjetas */
+    gap: 20px;          
     padding: 20px;
-    max-width: 1700px;   /* Aumentamos el ancho máximo para que quepan bien */
+    max-width: 1700px;   
     margin: 0 auto;
 }
 
 .news-card-horizontal {
 display: flex;
-    flex: 0 1 calc(50% - 20px); /* Ocupa el 50% menos el espacio del gap */
-    min-width: 450px;           /* Evita que se encojan demasiado */
+    flex: 0 1 calc(50% - 20px); 
+    min-width: 450px;          
     background: white;
     border-radius: 16px;
     overflow: hidden;
