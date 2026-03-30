@@ -1,17 +1,20 @@
 /* INTRO (HEADER) */
 
-.soccer-header{
+.soccer-header
+{
     text-align:center;
     margin-bottom:30px;
 }
 
-.soccer-header h1{
+.soccer-header h1
+{
     color:#163aaf;
     font-weight:700;
     font-size:2.2rem;
 }
 
-.soccer-header p{
+.soccer-header p
+{
     color:#555;
     max-width:600px;
     margin:0 auto;
@@ -19,7 +22,8 @@
 
 /* SOCCER PAGE LAYOUT */
 
-.soccer-layout{
+.soccer-layout
+{
     display:flex;
     gap:30px;
     padding:20px 40px 40px 40px;
@@ -29,12 +33,14 @@
 /* MAIN CONTENT */
 
 .soccer-main{
+
     flex:3;
 }
 
 /* SIDEBAR */
 
-.soccer-sidebar{
+.soccer-sidebar
+{
     flex:1;
     background:#155dfc;
     padding:30px;
@@ -44,7 +50,8 @@
 
 /* MAIN SOCCER SECTIONS */
 
-.soccer-section{
+.soccer-section
+{
     display:flex;
     gap:25px;
     background:white;
@@ -55,23 +62,27 @@
     align-items:center;
 }
 
-.soccer-section.reverse{
+.soccer-section.reverse
+{
     flex-direction:row-reverse;
 }
 
-.soccer-img{
+.soccer-img
+{
     width:320px;
     border-radius:10px;
 }
 
 /* TEXT */
 
-.soccer-text{
+.soccer-text
+{
     text-align:center;
 }
 
 .soccer-text h1,
-.soccer-text h2{
+.soccer-text h2
+{
     color:#163aaf;
     font-weight:700;
     margin-bottom:12px;
@@ -79,7 +90,8 @@
 
 /* SIDEBAR CARDS */
 
-.soccer-card{
+.soccer-card
+{
     background:white;
     padding:20px;
     border-radius:12px;
@@ -87,18 +99,21 @@
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-.soccer-card h3{
+.soccer-card h3
+{
     color:#163aaf;
     font-weight:700;
     text-align:center;
     margin-bottom:10px;
 }
 
-.soccer-card p{
+.soccer-card p
+{
     text-align:center;
 }
 
-.sidebar-soccer-img{
+.sidebar-soccer-img
+{
     width:100%;
     border-radius:8px;
     margin-bottom:10px;
