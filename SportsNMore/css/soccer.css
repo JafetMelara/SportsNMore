@@ -69,8 +69,12 @@
 
 .soccer-img
 {
-    width:320px;
+    width:260px;
+    height:320px;
+    object-fit:cover;
+    object-position:top;
     border-radius:10px;
+    flex-shrink:0;
 }
 
 /* TEXT */
