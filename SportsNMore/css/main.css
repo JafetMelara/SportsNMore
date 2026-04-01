@@ -265,6 +265,28 @@ display: flex;
     }
 }
 
+/* ABOUT US SPECIFIC STYLES */
+.profile-img {
+    height: 300px;
+    object-fit:contain; 
+    border-bottom: 4px solid #155dfc;
+}
+
+.profile-card {
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.ratio-16x9 {
+    border: 1px solid #ddd;
+    background: #eee;
+}
+
+
 
 /* FOOTER */
 .footer {
@@ -272,4 +294,63 @@ display: flex;
     color: white;
     padding: 40px 0;
     margin-top: 60px;
+}
+
+/* MEDIA QUERIES */
+/* 1. MOBILE (max-width: 568px) */
+@media (max-width: 568px) {
+    .news-card-horizontal {
+        flex-direction: column;
+        min-width: 100%;
+        margin: 10px 0;/
+    }
+    
+    .news-image, .news-body {
+        width: 100%;
+    }
+
+    .news-image {
+        height: 160px;
+    }
+
+    .news-body {
+        padding: 15px;
+    }
+
+    .news-title-alt {
+        font-size: 1rem;
+    }
+
+    .news-excerpt {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* 2. TABLETS / MEDIUM (min-width: 768px) */
+@media (min-width: 768px) {
+    .profile-img {
+        height: 250px;
+    }
+
+    .profile-card {
+        margin-bottom: 20px;
+    }
+
+    .hero-section {
+        padding: 40px 15px;
+        text-align: center;
+    }
+}
+
+/* 3. DESKTOP / LARGE (min-width: 1080px) */
+@media (min-width: 1080px) {
+    .news-card-horizontal {
+        flex: 0 1 calc(50% - 20px); 
+        min-width: 450px; 
+    }
+
+    .newscards {
+        max-width: 1700px;
+    }
 }
