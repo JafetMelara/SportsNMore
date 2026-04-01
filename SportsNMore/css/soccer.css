@@ -122,3 +122,64 @@
     border-radius:8px;
     margin-bottom:10px;
 }
+
+
+/* TABLET SCREEN (768px) */
+
+
+@media (max-width:768px)
+{
+
+.soccer-layout
+{
+    flex-direction:column;
+}
+
+.soccer-section,
+.soccer-section.reverse
+{
+    flex-direction:column;
+}
+
+.soccer-img
+{
+    width:100%;
+    height:auto;
+}
+
+.soccer-sidebar
+{
+    width:100%;
+}
+
+}
+
+
+/* MOBILE SCREEN (425px) */
+
+
+@media (max-width:425px)
+{
+
+.soccer-layout
+{
+    padding:20px;
+}
+
+.soccer-header h1
+{
+    font-size:1.8rem;
+}
+
+.soccer-card
+{
+    padding:15px;
+}
+
+.soccer-img
+{
+    width:100%;
+    height:auto;
+}
+
+}
