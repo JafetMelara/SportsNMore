@@ -1,16 +1,17 @@
-/* GENERAL */
+/* ============== GENERAL STYLES - SHARED BETWEEN PAGES ============== */
+
 body {
     background-color: #f5f6f8;
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
-nav{
+/* NAVBAR STYLES - SHARED */
+nav {
     background-color: #ffffff;
 }
 
 .nav-link {
-    color: rgb(0, 0, 0) ;
+    color: rgb(0, 0, 0);
     margin: 0 10px;
 }
 
@@ -21,7 +22,18 @@ nav{
     color: white !important;
 }
 
-/* HERO */
+/* FOOTER STYLES - SHARED */
+.footer {
+    background-color: #0b1a2f; 
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+
+/* ============== HOME PAGE SPECIFIC STYLES ============== */
+
+/* HERO SECTION */
 .hero-section {
     background-color: #163aaf;
     color: white;
@@ -38,7 +50,7 @@ nav{
     margin: auto;
 }
 
-/* GAMES CARDS */
+/* FEATURED GAMES CARDS */
 .score-card {
     background: white;
     border-radius: 12px;
@@ -64,7 +76,7 @@ nav{
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #d90429; /* Rojo vibrante */
+    background-color: #d90429;
     color: white;
     padding: 2px 12px;
     border-radius: 20px;
@@ -81,7 +93,6 @@ nav{
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
-
 
 .match-details {
     display: flex;
@@ -119,7 +130,6 @@ nav{
     text-align: right;
 }
 
-/*SECTION*/
 .sportscards {
     display: flex;
     justify-content: center;
@@ -128,10 +138,9 @@ nav{
     margin-top: 40px;
 }
 
-
-/* NEWS CARDS */
+/* NEWS CARDS SECTION */
 .newscards {
-display: flex;
+    display: flex;
     flex-direction: row; 
     flex-wrap: wrap;     
     justify-content: center;
@@ -142,7 +151,7 @@ display: flex;
 }
 
 .news-card-horizontal {
-display: flex;
+    display: flex;
     flex: 0 1 calc(50% - 20px); 
     min-width: 450px;          
     background: white;
@@ -250,22 +259,241 @@ display: flex;
     text-decoration: underline;
 }
 
-/* Responsivness for mobile devices */
-@media (max-width: 768px) {
-    .news-card-horizontal {
-        flex-direction: column;
-    }
-    .news-image {
-        width: 100%;
-        height: 200px;
-    }
-    .news-body {
-        width: 100%;
-        padding: 20px;
-    }
+/* ============== SOCCER PAGE SPECIFIC STYLES ============== */
+.soccer-header {
+    text-align:center;
+    margin-bottom:30px;
 }
 
-/* ABOUT US SPECIFIC STYLES */
+.soccer-header h1 {
+    color:#163aaf;
+    font-weight:700;
+    font-size:2.2rem;
+}
+
+.soccer-header p {
+    color:#555;
+    max-width:600px;     
+    margin:0 auto;
+}
+
+.soccer-layout {
+    display:flex;
+    gap:30px;
+    padding:20px 40px 40px 40px;
+}
+
+.soccer-main {
+    flex:3;
+}
+
+.soccer-sidebar {
+    flex:1;
+    background:#155dfc;
+    padding:30px;
+    border-radius:12px;
+    align-self:flex-start;
+}
+
+.soccer-section {
+    display:flex;
+    gap:25px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    align-items:center;
+}
+
+.soccer-section.reverse {
+    flex-direction:row-reverse;
+}
+
+.soccer-img {
+    width:260px;
+    height:320px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:10px;
+    flex-shrink:0;
+}
+
+.soccer-text {
+    text-align:center;
+}
+
+.soccer-text h1, .soccer-text h2 {
+    color:#163aaf;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.soccer-card {
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.soccer-card h3 {
+    color:#163aaf;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.soccer-card p {
+    text-align:center;
+}
+
+.sidebar-soccer-img {
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+
+/* ============== BASKETBALL PAGE SPECIFIC STYLES ============== */
+
+.basketball-layout {
+    display:flex;
+    gap:30px;
+    padding:40px;
+}
+
+.basketball-main {
+    flex:3;
+}
+
+.basketball-sidebar {
+    flex:1;
+    background:#155dfc;
+    padding:40px;
+    border-radius:12px;
+}
+
+.intro-box {
+    display:flex;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:40px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro-img {
+    width:320px;
+    border-radius:10px;
+}
+
+.intro-text h1 {
+    color:#163aaf;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.players-box {
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.player-img {
+    width:100%;
+    height:460px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.player-name {
+    font-weight:700;
+    font-size:20px;
+    color:#163aaf;
+    margin-top:10px;
+}
+
+.players-text {
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:40px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.players-text h2 {
+    color:#163aaf;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.debate-box {
+    display:flex;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:40px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.debate-img {
+    width:200px;
+    border-radius:10px;
+}
+
+.debate-text h2 {
+    color:#163aaf;
+    margin-bottom:10px;
+    text-align:center;
+    font-weight:700;
+}
+
+.sidebar-box {
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sidebar-box h3 {
+    color:#163aaf;
+    margin-bottom:10px;
+    font-weight:700;
+    text-align:center;
+}
+
+.sidebar-img {
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.sidebar-box h3 a {
+    color:#163aaf;
+    text-decoration:none;
+}
+
+.sidebar-box h3 a:hover {
+    text-decoration:underline;
+}
+
+.player {
+    text-align:center;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+/* ============== ABOUT US PAGE SPECIFIC STYLES ============== */
+
 .profile-img {
     height: 300px;
     object-fit:contain; 
@@ -280,54 +508,133 @@ display: flex;
     transform: translateY(-10px);
 }
 
-
 .ratio-16x9 {
     border: 1px solid #ddd;
     background: #eee;
 }
 
 
+/* ============== UNIFIED MEDIA QUERIES ============== */
 
-/* FOOTER */
-.footer {
-    background-color: #0b1a2f; 
-    color: white;
-    padding: 40px 0;
-    margin-top: 60px;
-}
 
-/* MEDIA QUERIES */
-/* 1. MOBILE (max-width: 568px) */
+/* MOBILE BREAKPOINT  */
 @media (max-width: 568px) {
+    
+    /* --- Home News Cards Mobile --- */
     .news-card-horizontal {
         flex-direction: column;
         min-width: 100%;
-        margin: 10px 0;/
+        margin: 10px 0;
     }
-    
-    .news-image, .news-body {
-        width: 100%;
+    .news-image, .news-body { width: 100%; }
+    .news-image { height: 160px; }
+    .news-body { padding: 15px; }
+    .news-title-alt { font-size: 1rem; }
+
+    /* --- GLOBAL IMAGES (Soccer & Basketball) --- */
+    .soccer-img, 
+    .intro-img, 
+    .player-img, 
+    .debate-img,
+    .sidebar-soccer-img,
+    .sidebar-img {
+        width: 65% !important;
+        height: auto !important;
+        max-height: 200px !important;
+        margin: 0 auto 15px auto !important;
+        display: block;
+        object-fit: cover;
     }
 
-    .news-image {
-        height: 160px;
+    /* Adjusting containers to center content */
+    .soccer-section, 
+    .soccer-section.reverse,
+    .intro-box,
+    .players-box,
+    .debate-box {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 15px !important;
     }
 
-    .news-body {
-        padding: 15px;
+    /* Text adjustment for better readability */
+    .soccer-text h1, .soccer-text h2, 
+    .intro-text h1, .players-text h2, .debate-text h2 {
+        font-size: 1.2rem !important;
+        margin-top: 10px;
     }
 
-    .news-title-alt {
-        font-size: 1rem;
-    }
-
-    .news-excerpt {
-        font-size: 0.85rem;
-        margin-bottom: 10px;
+    .soccer-text p, .intro-text p, .players-text p, .debate-text p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
 
-/* 2. TABLETS / MEDIUM (min-width: 768px) */
+/* TABLET BREAKPOINT  */
+@media (max-width: 768px) {
+
+    /* Shared News Card Behavior */
+    .news-card-horizontal {
+        flex-direction: column;
+    }
+    .news-image {
+        width: 100%;
+        height: 200px;
+    }
+    .news-body {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Soccer Tablet */
+    .soccer-layout {
+        flex-direction: column;
+    }
+
+    .soccer-section, .soccer-section.reverse {
+        flex-direction: column;
+    }
+
+    .soccer-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .soccer-sidebar {
+        width: 100%;
+    }
+
+    /* Basketball Tablet */
+    .basketball-layout {
+        flex-direction: column;
+    }
+
+    .intro-box, .players-box, .debate-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .player {
+        width: 100%;
+    }
+
+    .player-img {
+        height: auto;
+    }
+
+    .basketball-sidebar {
+        width: 100%;
+    }
+}
+
+/* TABLET SPECIFIC */
 @media (min-width: 768px) {
     .profile-img {
         height: 250px;
@@ -343,7 +650,7 @@ display: flex;
     }
 }
 
-/* 3. DESKTOP / LARGE (min-width: 1080px) */
+/* DESKTOP BREAKPOINT */
 @media (min-width: 1080px) {
     .news-card-horizontal {
         flex: 0 1 calc(50% - 20px); 

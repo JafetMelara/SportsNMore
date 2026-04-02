@@ -1,0 +1,7 @@
+Project Partners: Jafet Melara & Ayaan Nadeem
+
+Jafet Melara (Lead Developer): Responsible for the global HTML structure, consolidation of the external stylesheet (main.css), CSS3 Media Queries logic, and content development for the Home and About Us pages.
+
+Ayaan Nadeem (Secondary Developer): Responsible for the design and content of the Basketball and Soccer sections, sports news research, and the creation of the official User Manual.
+
+Note: Specific details regarding the code evolution and individual contributions can be verified through the GitHub commit history included in the User Manual within the "About Us" section.
