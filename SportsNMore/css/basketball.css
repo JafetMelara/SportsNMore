@@ -178,36 +178,68 @@
 }
 
 
+/* TABLET RESPONSIVE (768px) */
 
-/* TABLET SCREEN (768px) */
 
 @media (max-width:768px)
 {
 
-.soccer-layout
+.basketball-layout
 {
     flex-direction:column;
 }
 
-/* soccer sections stack */
+/* intro section stacks */
 
-.soccer-section,
-.soccer-section.reverse
+.intro-box
 {
     flex-direction:column;
+    align-items:center;
+    text-align:center;
 }
 
-/* soccer images resize */
-
-.soccer-img
+.intro-img
 {
     width:100%;
+    max-width:400px;
+}
+
+/* players stack */
+
+.players-box
+{
+    flex-direction:column;
+}
+
+.player
+{
+    width:100%;
+}
+
+/* player images resize */
+
+.player-img
+{
     height:auto;
+}
+
+/* debate section stacks */
+
+.debate-box
+{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.debate-img
+{
+    width:60%;
 }
 
 /* sidebar full width */
 
-.soccer-sidebar
+.basketball-sidebar
 {
     width:100%;
 }
@@ -215,37 +247,43 @@
 }
 
 
+/* MOBILE RESPONSIVE (425px) */
 
-/* MOBILE SCREEN (425px) */
 
 @media (max-width:425px)
 {
 
-.soccer-layout
+.basketball-layout
 {
     padding:20px;
 }
 
-/* smaller header text */
+/* smaller intro image */
 
-.soccer-header h1
-{
-    font-size:1.8rem;
-}
-
-/* smaller sidebar cards */
-
-.soccer-card
-{
-    padding:15px;
-}
-
-/* images scale for phone */
-
-.soccer-img
+.intro-img
 {
     width:100%;
+}
+
+/* player images smaller */
+
+.player-img
+{
     height:auto;
+}
+
+/* debate image smaller */
+
+.debate-img
+{
+    width:80%;
+}
+
+/* reduce sidebar padding */
+
+.basketball-sidebar
+{
+    padding:20px;
 }
 
 }
